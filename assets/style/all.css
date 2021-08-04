@@ -1,0 +1,46 @@
+@import url("https://fonts.googleapis.com/css2?family=Lato:wght@400;700&family=Roboto+Mono&display=swap");
+*, *::before, *::after {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box; }
+
+body {
+  font-family: Lato, Roboto Mono; }
+
+p {
+  line-height: 1.5;
+  margin-bottom: 0; }
+
+.container {
+  max-width: 1280px;
+  margin: 0 auto; }
+
+.navbar {
+  width: 296px;
+  height: 100vh;
+  background-color: #F8F9FA; }
+  .navbar-logo {
+    margin-bottom: -8px; }
+  .navbar-brand {
+    background-image: url("https://raw.githubusercontent.com/hexschool/webLayoutTraining1st/master/week5/logo-ANSWER.svg");
+    width: 151px;
+    height: 40px;
+    display: block;
+    text-indent: 101%;
+    overflow: hidden;
+    white-space: nowrap;
+    margin-right: -16px; }
+  .navbar .nav-link {
+    color: #000; }
+  .navbar span {
+    vertical-align: middle;
+    padding-right: 16px; }
+  .navbar .profile {
+    height: 54px; }
+  .navbar .profile-img {
+    border-radius: 50%;
+    -o-object-fit: cover;
+       object-fit: cover; }
+  .navbar .profile-email {
+    color: #6C757D; }
+
+/*# sourceMappingURL=all.css.map */
