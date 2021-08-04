@@ -1,0 +1,44 @@
+// 如何清除 li 圓點？
+
+.navbar{
+    width: 296px;
+    height: 100vh;
+    background-color: $bg-light;
+    &-logo{
+        margin-bottom: -8px;
+        // 為什麼 h1 有預設 mb 8px？其他人會保留嗎還是reset掉？
+    }
+    &-brand{
+        background-image: url('https://raw.githubusercontent.com/hexschool/webLayoutTraining1st/master/week5/logo-ANSWER.svg');
+        // width: 100%;
+        width: 151px;
+        height: 40px;
+        display: block;
+        // 這個在 BS.nav-brand 就有預設了嗎？
+        text-indent: 101%;
+        overflow: hidden;
+        white-space: nowrap;
+        margin-right: -16px;
+        // 為什麼 navbar-brand 有預設 mr 16px？其他人會保留嗎還是reset掉？
+    }
+     .nav-link{
+        color: #000;
+    }
+    span{
+        vertical-align: middle;
+        padding-right: 16px;
+    }
+    .profile{
+        height: 54px;
+        // position: absolute;
+        // bottom: 32px;
+        // left: 32px;
+    }
+    .profile-img{
+        border-radius: 50%;
+        object-fit: cover;
+    }
+    .profile-email{
+        color: $font-secondary;
+    }
+}

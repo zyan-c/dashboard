@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title><%- title %></title>
+  <!-- 載入 google font -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700&family=Roboto+Mono&display=swap" rel="stylesheet">
+  <!-- 載入 google material icon -->
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet">
+  <!-- 載入 BS5 CDN -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+  <!-- 載入自己的 all.scss -->
+  <link rel="stylesheet" href="./assets/style/all.css">
+</head>
+
+<nav class="navbar pt-4 ps-4">
+  <h1 class="navbar-logo mb-4"><a href="#" class="navbar-brand">Answer</a></h1>
+  <ul class="list-unstyled flex-grow-1">
+      <!-- li mb 是 26px，只能用mb-2？還是寫在 css 內？ -->
+      <!-- li 是不是可以不用賦予 class.nav-item, 而只是裝 utils 用的？如ul？ -->
+      <!-- a 要用 nav-link，不可改成自命名的 navbar-link -->
+      <li class="nav-item mb-2"><a href="" class="nav-link"><span class="material-icons">
+        assessment
+        </span>Dashboard</a></li>
+      <li class="nav-item mb-2"><a href="" class="nav-link"><span class="material-icons">
+        question_answer
+        </span>Question</a></li>
+      <li class="nav-item mb-2"><a href="" class="nav-link"><span class="material-icons">
+        assignment
+        </span>Assignment</a></li>
+      <li class="nav-item mb-2"><a href="" class="nav-link"><span class="material-icons">
+        video_library
+        </span>Course</a></li>
+      <li class="nav-item mb-2"><a href="" class="nav-link"><span class="material-icons">
+        supervisor_account
+        </span>Admin</a></li>
+      <li class="nav-item mb-2"><a href="" class="nav-link"><span class="material-icons">
+        settings
+        </span>Settings</a></li>
+  </ul>
+  <div class="profile d-flex align-items-center">
+      <img class="profile-img me-2" src="https://raw.githubusercontent.com/hexschool/webLayoutTraining1st/master/week5/andychen.jpeg" alt="profile pic" width="40px" height="40px">
+      <div class="profile-body">
+          <p class="profile-name">Andy Chen</p>
+          <p class="profile-email">andy0401@mail.com</p>
+      </div>
+  </div>
+</nav>
+
+  <%- contents %>
+
+  <script src="./assets/js/vendors.js"></script>
+  <script src="./assets/js/all.js"></script>
+</body>
+
+</html>
